@@ -7,7 +7,7 @@ from helpers.filters import other_filters2
 
 @Client.on_message(other_filters2)
 async def start(_, message: Message):
-    await message.reply_sticker("https://telegra.ph/file/d7b30ee7881c9b91031af.jpg")
+    await message.reply_image("https://telegra.ph/file/d7b30ee7881c9b91031af.jpg")
     await message.reply_text(
         f"""**Hey, I'm {bn} 🎵
 
@@ -30,7 +30,7 @@ Add me to your group and play music freely!**
                         "🌎Music-world🌎", url="https://t.me/apni_yaari"
                     ),
                     InlineKeyboardButton(
-                        "⚡Support⚡", url="https://t.me/Infinity_BOTs"
+                        "⚡Support⚡", url="https://t.me/patricia_support"
                     )
                 ],
                   [ 
