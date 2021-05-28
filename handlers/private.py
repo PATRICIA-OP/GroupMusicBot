@@ -8,37 +8,6 @@ from helpers.filters import other_filters2
 @Client.on_message(other_filters2)
 async def start(_, message: Message):
     
-    await message.reply_text(
-        f"""**Hey, I'm {bn} 🎵
-
-✨I can play music in your group's voice chat.
-✨ Don't ask for repo else you will be gbanned
-✨No support for this musicbot repo.
-✨Developed by [ALONE](https://t.me/Tere_bandi_meri_fan_hai).
-✨Under development by [Blaze](t.me/piroXpower)
-
-Add me to your group and play music freely!**
-        """,
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        "🔥Owner🔥", url="t.me/Tere_bandi_meri_fan_hai")
-                  ],
-                    [
-                    InlineKeyboardButton(
-                        "🌎Music-world🌎", url="https://t.me/apni_yaari"
-                    ),
-                    InlineKeyboardButton(
-                        "⚡Support⚡", url="https://t.me/patricia_support"
-                    )
-                ],
-                  [ 
-                    InlineKeyboardButton(
-                        "⚜️ADD ME⚜️", url="https://t.me/TalkzoneXmusicbot?startgroup=true"
-                    )]
-            ]
-        ),
      disable_web_page_preview=True
     )
 
