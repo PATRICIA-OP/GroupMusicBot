@@ -15,7 +15,7 @@ from helpers.errors import DurationLimitError
 from helpers.gets import get_url, get_file_name
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-@Client.on_message(command("play") & other_filters)
+@Client.on_message(command("lplay") & other_filters)
 @errors
 async def play(_, message: Message):
 
@@ -59,7 +59,7 @@ async def play(_, message: Message):
     else:
         callsmusic.pytgcalls.join_group_call(message.chat.id, file_path)
         await message.reply_photo(
-        photo="https://telegra.ph/file/22b9583e6d74d211a12f4.jpg",
+        photo="https://telegra.ph/file/b31194789adabfd4bb095.png",
         reply_markup=keyboard,
         caption="🎸**Playing** here the song requested by {}!".format(
         message.from_user.mention()
