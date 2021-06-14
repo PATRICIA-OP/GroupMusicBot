@@ -1,0 +1,11 @@
+---
+application:
+  name: "groupmusicbot"
+  project: "TELEGRAM-OP"
+  organization: "QoveryCommunity"
+routers:
+- name: "main-groupmusicbot"
+  routes:
+  - application_name: "groupmusicbot"
+    paths:
+    - "/*"
